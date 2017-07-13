@@ -15,4 +15,9 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+  
+  def copyright_generator
+    MogaViewTool::Renderer.copyright 'Lauren Moga', 'All rights reserved'
+  end
+  
 end
